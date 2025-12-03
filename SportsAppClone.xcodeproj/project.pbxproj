@@ -6,9 +6,41 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		AF534FCB2EE03A7F00C24675 /* InlineSnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AF534FCA2EE03A7F00C24675 /* InlineSnapshotTesting */; };
+		AF534FCD2EE03A7F00C24675 /* SnapshotTesting in Frameworks */ = {isa = PBXBuildFile; productRef = AF534FCC2EE03A7F00C24675 /* SnapshotTesting */; };
+		AF534FCF2EE03A7F00C24675 /* SnapshotTestingCustomDump in Frameworks */ = {isa = PBXBuildFile; productRef = AF534FCE2EE03A7F00C24675 /* SnapshotTestingCustomDump */; };
+		AF534FE12EE03DDF00C24675 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AF534FE02EE03DDF00C24675 /* .gitignore */; };
+		AF534FE52EE03EA300C24675 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AF534FE42EE03EA300C24675 /* README.md */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AF534FD82EE03D1000C24675 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AF534F912EE034EA00C24675 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AF534F982EE034EA00C24675;
+			remoteInfo = SportsAppClone;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		AF534F992EE034EA00C24675 /* SportsAppClone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SportsAppClone.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF534FD42EE03D1000C24675 /* SportsAppCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsAppCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AF534FE02EE03DDF00C24675 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		AF534FE42EE03EA300C24675 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		AF534FF62EE040C200C24675 /* Exceptions for "docs" folder in "SportsAppClone" target */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				AI_INTEGRATION_GUIDE.md,
+				INTERVIEW_PREP.md,
+			);
+			target = AF534F982EE034EA00C24675 /* SportsAppClone */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		AF534F9B2EE034EA00C24675 /* SportsAppClone */ = {
@@ -16,10 +48,33 @@
 			path = SportsAppClone;
 			sourceTree = "<group>";
 		};
+		AF534FD52EE03D1000C24675 /* SportsAppCloneTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = SportsAppCloneTests;
+			sourceTree = "<group>";
+		};
+		AF534FF52EE040B100C24675 /* docs */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				AF534FF62EE040C200C24675 /* Exceptions for "docs" folder in "SportsAppClone" target */,
+			);
+			path = docs;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		AF534F962EE034EA00C24675 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF534FCF2EE03A7F00C24675 /* SnapshotTestingCustomDump in Frameworks */,
+				AF534FCB2EE03A7F00C24675 /* InlineSnapshotTesting in Frameworks */,
+				AF534FCD2EE03A7F00C24675 /* SnapshotTesting in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF534FD12EE03D1000C24675 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -32,8 +87,12 @@
 		AF534F902EE034EA00C24675 = {
 			isa = PBXGroup;
 			children = (
+				AF534FF52EE040B100C24675 /* docs */,
 				AF534F9B2EE034EA00C24675 /* SportsAppClone */,
+				AF534FD52EE03D1000C24675 /* SportsAppCloneTests */,
 				AF534F9A2EE034EA00C24675 /* Products */,
+				AF534FE42EE03EA300C24675 /* README.md */,
+				AF534FE02EE03DDF00C24675 /* .gitignore */,
 			);
 			sourceTree = "<group>";
 		};
@@ -41,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				AF534F992EE034EA00C24675 /* SportsAppClone.app */,
+				AF534FD42EE03D1000C24675 /* SportsAppCloneTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -65,10 +125,36 @@
 			);
 			name = SportsAppClone;
 			packageProductDependencies = (
+				AF534FCA2EE03A7F00C24675 /* InlineSnapshotTesting */,
+				AF534FCC2EE03A7F00C24675 /* SnapshotTesting */,
+				AF534FCE2EE03A7F00C24675 /* SnapshotTestingCustomDump */,
 			);
 			productName = SportsAppClone;
 			productReference = AF534F992EE034EA00C24675 /* SportsAppClone.app */;
 			productType = "com.apple.product-type.application";
+		};
+		AF534FD32EE03D1000C24675 /* SportsAppCloneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AF534FDA2EE03D1000C24675 /* Build configuration list for PBXNativeTarget "SportsAppCloneTests" */;
+			buildPhases = (
+				AF534FD02EE03D1000C24675 /* Sources */,
+				AF534FD12EE03D1000C24675 /* Frameworks */,
+				AF534FD22EE03D1000C24675 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AF534FD92EE03D1000C24675 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				AF534FD52EE03D1000C24675 /* SportsAppCloneTests */,
+			);
+			name = SportsAppCloneTests;
+			packageProductDependencies = (
+			);
+			productName = SportsAppCloneTests;
+			productReference = AF534FD42EE03D1000C24675 /* SportsAppCloneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -83,6 +169,10 @@
 					AF534F982EE034EA00C24675 = {
 						CreatedOnToolsVersion = 26.1.1;
 					};
+					AF534FD32EE03D1000C24675 = {
+						CreatedOnToolsVersion = 26.1.1;
+						TestTargetID = AF534F982EE034EA00C24675;
+					};
 				};
 			};
 			buildConfigurationList = AF534F942EE034EA00C24675 /* Build configuration list for PBXProject "SportsAppClone" */;
@@ -94,12 +184,16 @@
 			);
 			mainGroup = AF534F902EE034EA00C24675;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				AF534FC92EE03A7F00C24675 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = AF534F9A2EE034EA00C24675 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
 				AF534F982EE034EA00C24675 /* SportsAppClone */,
+				AF534FD32EE03D1000C24675 /* SportsAppCloneTests */,
 			);
 		};
 /* End PBXProject section */
@@ -109,6 +203,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF534FD22EE03D1000C24675 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AF534FE12EE03DDF00C24675 /* .gitignore in Resources */,
+				AF534FE52EE03EA300C24675 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -122,7 +225,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AF534FD02EE03D1000C24675 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AF534FD92EE03D1000C24675 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AF534F982EE034EA00C24675 /* SportsAppClone */;
+			targetProxy = AF534FD82EE03D1000C24675 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		AF534FA22EE034EB00C24675 /* Debug */ = {
@@ -186,6 +304,7 @@
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 6.0;
 			};
 			name = Debug;
 		};
@@ -242,6 +361,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 6.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -273,7 +393,7 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 6.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -305,8 +425,50 @@
 				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		AF534FDB2EE03D1000C24675 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MPMKAF986;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arieljtyson.SportsAppCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SportsAppClone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SportsAppClone";
+			};
+			name = Debug;
+		};
+		AF534FDC2EE03D1000C24675 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 2MPMKAF986;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.arieljtyson.SportsAppCloneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRING_CATALOG_GENERATE_SYMBOLS = NO;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SportsAppClone.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SportsAppClone";
 			};
 			name = Release;
 		};
@@ -331,7 +493,45 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		AF534FDA2EE03D1000C24675 /* Build configuration list for PBXNativeTarget "SportsAppCloneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AF534FDB2EE03D1000C24675 /* Debug */,
+				AF534FDC2EE03D1000C24675 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		AF534FC92EE03A7F00C24675 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pointfreeco/swift-snapshot-testing";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.18.7;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		AF534FCA2EE03A7F00C24675 /* InlineSnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF534FC92EE03A7F00C24675 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = InlineSnapshotTesting;
+		};
+		AF534FCC2EE03A7F00C24675 /* SnapshotTesting */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF534FC92EE03A7F00C24675 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTesting;
+		};
+		AF534FCE2EE03A7F00C24675 /* SnapshotTestingCustomDump */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = AF534FC92EE03A7F00C24675 /* XCRemoteSwiftPackageReference "swift-snapshot-testing" */;
+			productName = SnapshotTestingCustomDump;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = AF534F912EE034EA00C24675 /* Project object */;
 }
