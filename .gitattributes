@@ -1,0 +1,45 @@
+# Track all snapshot PNG images with Git LFS
+Tests/SnapshotTests/__Snapshots__/**/*.png filter=lfs diff=lfs merge=lfs -text
+
+# To enable Git LFS:
+# Install Git LFS: brew install git-lfs
+# Initialize: git lfs install
+# Track existing files: git lfs migrate import --include="Tests/SnapshotTests/__Snapshots__/**/*.png"
+
+# Standard Git attributes
+* text=auto
+
+# Source code
+*.swift text diff=swift
+*.h text
+*.m text
+*.mm text
+*.c text
+*.cpp text
+*.hpp text
+
+# Project files
+*.xcodeproj text
+*.xcworkspace text
+*.pbxproj text
+*.plist text
+
+# Documentation
+*.md text
+*.txt text
+README text
+
+# Scripts
+*.sh text eol=lf
+
+# Images (not using LFS by default)
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.svg text
+
+# Other
+*.json text
+*.yml text
+*.yaml text

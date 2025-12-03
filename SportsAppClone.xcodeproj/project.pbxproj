@@ -12,6 +12,8 @@
 		AF534FCF2EE03A7F00C24675 /* SnapshotTestingCustomDump in Frameworks */ = {isa = PBXBuildFile; productRef = AF534FCE2EE03A7F00C24675 /* SnapshotTestingCustomDump */; };
 		AF534FE12EE03DDF00C24675 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = AF534FE02EE03DDF00C24675 /* .gitignore */; };
 		AF534FE52EE03EA300C24675 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = AF534FE42EE03EA300C24675 /* README.md */; };
+		AF53500D2EE0450A00C24675 /* .githubworkflowssnapshot-tests.yml in Resources */ = {isa = PBXBuildFile; fileRef = AF53500C2EE0450A00C24675 /* .githubworkflowssnapshot-tests.yml */; };
+		AF5350152EE045D800C24675 /* .gitattributes in Resources */ = {isa = PBXBuildFile; fileRef = AF5350142EE045D800C24675 /* .gitattributes */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		AF534FD42EE03D1000C24675 /* SportsAppCloneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SportsAppCloneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AF534FE02EE03DDF00C24675 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		AF534FE42EE03EA300C24675 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		AF53500C2EE0450A00C24675 /* .githubworkflowssnapshot-tests.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = ".githubworkflowssnapshot-tests.yml"; sourceTree = "<group>"; };
+		AF5350142EE045D800C24675 /* .gitattributes */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitattributes; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -93,6 +97,8 @@
 				AF534F9A2EE034EA00C24675 /* Products */,
 				AF534FE42EE03EA300C24675 /* README.md */,
 				AF534FE02EE03DDF00C24675 /* .gitignore */,
+				AF5350142EE045D800C24675 /* .gitattributes */,
+				AF53500C2EE0450A00C24675 /* .githubworkflowssnapshot-tests.yml */,
 			);
 			sourceTree = "<group>";
 		};
@@ -203,6 +209,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AF5350152EE045D800C24675 /* .gitattributes in Resources */,
+				AF53500D2EE0450A00C24675 /* .githubworkflowssnapshot-tests.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
